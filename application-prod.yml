@@ -1,2 +1,14 @@
-environment: production
+app:
+  environment: production
   message: "Hello from PROD environment!"
+  database:
+    url: jdbc:postgresql://prod-server:5432/prod_db
+    username: prod_user
+    password: prod_password
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework: WARN

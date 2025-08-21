@@ -1,2 +1,10 @@
-environment: development
+app:
+  environment: development
   message: "Hello from DEV environment!"
+  database:
+    url: jdbc:postgresql://localhost:5432/dev_db
+    username: dev_user
+    password: dev_password
+
+server:
+  port: 8081
