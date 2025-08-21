@@ -1,0 +1,2 @@
+environment: production
+  message: "Hello from PROD environment!"
